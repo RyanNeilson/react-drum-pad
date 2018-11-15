@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Iceberg");
+body {
+  font-family: Iceberg;
+  font-size: 20px;
+}
+
+body {
+  user-select: none;
+  background-color: #333;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inner-container {
+  border: 1px solid #111;
+  border-radius: 10px;
+  position: relative;
+  width: 500px;
+  text-align: center;
+  background-color: #222;
+}
+.inner-container .pad-bank {
+  width: 272px;
+  height: 212px;
+  display: inline-block;
+  padding-top: 10px;
+}
+.inner-container .pad-bank .drum-pad {
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.inner-container .title {
+  color: white;
+  padding-top: 50px;
+  font-size: 40px;
+}
+.inner-container .controls-container {
+  width: 250px;
+  height: 212px;
+  display: inline-block;
+  vertical-align: top;
+}
+.inner-container .controls-container .control {
+  width: 100px;
+  margin: auto;
+}
+.inner-container .controls-container .control p {
+  margin-bottom: 0;
+}
+.inner-container .controls-container #display {
+  width: 200px;
+  background-color: #0040ff;
+  margin: 15px auto;
+  margin-right: 30px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #111;
+  color: white;
+}
+
+.outer-select, .inner-container .controls-container .control .select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner-select, .inner-container .controls-container .control .select .inner {
+  width: 23px;
+  height: 19px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    transform: scale(0.7);
+  }
+}
